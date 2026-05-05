@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../public/estilos.css" />
+		<title>Grid</title>
+	</head>
+	<body>
+		<h2 class="m-5 mt-10 font-bold text-3xl">Display</h2>
+		<p class="m-5">.grid</p>
+		<div class="grid gap-5 m-5 p-5 bg-slate-200">
+			<div class="bg-indigo-500 text-white p-5">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 4</div>
+		</div>
+
+		<p class="m-5">.inline-grid</p>
+		<div class="inline-grid gap-5 mx-5 p-5 bg-slate-200">
+			<div class="bg-indigo-500 text-white p-5">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 4</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Template Columns</h2>
+		<p class="m-5">.grid-cols-#</p>
+		<div class="grid gap-5 grid-cols-3 mx-5 p-5 bg-slate-200">
+			<div class="bg-indigo-500 text-white p-5">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 4</div>
+		</div>
+
+		<p class="m-5">.grid-rows-#</p>
+		<div class="grid gap-5 grid-rows-3 grid-flow-col mx-5 p-5 bg-slate-200">
+			<div class="bg-indigo-500 text-white p-5">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 4</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Grid Column Start / End</h2>
+		<div class="grid gap-5 grid-cols-3 mx-5 p-5 bg-slate-200">
+			<div class="bg-orange-500 text-white p-5 col-span-2">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-green-700 text-white p-5 col-start-2 col-end-4">Caja 4</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 5</div>
+			<div class="bg-red-500 text-white p-5 col-span-full">Caja 6</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Grid Row Start / End</h2>
+		<div class="grid gap-5 mx-5 p-5 bg-slate-200 grid-flow-col grid-rows-5">
+			<div class="bg-orange-500 text-white p-5 row-span-2">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 4</div>
+			<div class="bg-green-700 text-white p-5 row-span-full">Caja 5</div>
+			<div class="bg-indigo-500 text-white p-5 row-start-2 row-end-5">Caja 6</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../public/estilos.css" />
+		<title>Layout con Tailwind</title>
+	</head>
+	<body class="bg-slate-100">
+		<div class="w-11/12 max-w-5xl mx-auto my-10 grid grid-cols-12 gap-5">
+			<header class="bg-slate-300 text-center p-10 rounded col-span-12">HEADER</header>
+			<main class="col-span-12 grid grid-cols-12 gap-5">
+				<article class="bg-slate-300 text-center p-10 h-[400px] rounded col-span-12 md:col-span-8">
+					CONTENIDO
+				</article>
+				<aside class="bg-slate-300 text-center p-10 rounded col-span-12 md:col-span-4">ASIDE</aside>
+			</main>
+			<section class="col-span-12 grid grid-cols-12 gap-5">
+				<div class="bg-slate-300 text-center p-10 rounded col-span-6 md:col-span-4">WIDGET</div>
+				<div class="bg-slate-300 text-center p-10 rounded col-span-6 md:col-span-4">WIDGET</div>
+				<div class="bg-slate-300 text-center p-10 rounded col-span-12 md:col-span-4">WIDGET</div>
+			</section>
+			<footer class="bg-slate-300 text-center p-10 rounded col-span-full">FOOTER</footer>
+		</div>
+	</body>
+</html>

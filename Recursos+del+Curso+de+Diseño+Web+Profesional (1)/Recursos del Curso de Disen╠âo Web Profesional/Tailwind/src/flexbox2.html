@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../public/estilos.css" />
+		<title>Flexbox 2</title>
+	</head>
+	<body>
+		<h2 class="m-5 mt-10 font-bold text-3xl">Direction</h2>
+		<p class="m-5">.flex-row</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-row">
+			<div class="bg-indigo-500 text-white p-5 w-80">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3</div>
+		</div>
+
+		<p class="m-5">.flex-row-reverse</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-row-reverse">
+			<div class="bg-indigo-500 text-white p-5 w-80">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3</div>
+		</div>
+
+		<p class="m-5">.flex-col</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col">
+			<div class="bg-indigo-500 text-white p-5 w-80">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3</div>
+		</div>
+
+		<p class="m-5">.flex-col-reverse</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col-reverse">
+			<div class="bg-indigo-500 text-white p-5 w-80">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Justify Content (row)</h2>
+		<p class="m-5">.justify-start</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 justify-start">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-end</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 justify-end">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-center</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 justify-center">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-between</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 justify-between">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-around</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 justify-around">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-evenly</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 justify-evenly">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Justify Content (col)</h2>
+		<p class="m-5">.justify-start</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col justify-start h-[500px]">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-end</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col justify-end h-[500px]">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-center</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col justify-center h-[500px]">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-between</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col justify-between h-[500px]">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-around</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col justify-around h-[500px]">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.justify-evenly</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col justify-evenly h-[500px]">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Align Items (row)</h2>
+		<p class="m-5">.items-start</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 h-60 items-start">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.items-end</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 h-60 items-end">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.items-center</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 h-60 items-center">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.items-baseline</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 h-60 items-baseline">
+			<div class="bg-indigo-500 text-white p-5 w-40 pt-20">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40 pb-20">3</div>
+		</div>
+		<p class="m-5">.items-stretch</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 h-60 items-stretch">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Align Items (col)</h2>
+		<p class="m-5">.items-start</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col items-start">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.items-end</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col items-end">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.items-center</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col items-center">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.items-baseline</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col items-baseline">
+			<div class="bg-indigo-500 text-white p-5 w-40">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40">3</div>
+		</div>
+		<p class="m-5">.items-stretch</p>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col items-stretch">
+			<div class="bg-indigo-500 text-white p-5">1</div>
+			<div class="bg-indigo-500 text-white p-5">2</div>
+			<div class="bg-indigo-500 text-white p-5">3</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Align Self (row)</h2>
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 h-60">
+			<div class="bg-indigo-500 text-white p-5 w-40 self-start">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40 self-end">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40 self-center">3</div>
+			<div class="bg-indigo-500 text-white p-5 w-40 self-stretch">4</div>
+		</div>
+
+		<div class="flex gap-5 m-5 p-5 bg-slate-200 flex-col">
+			<div class="bg-indigo-500 text-white p-5 w-40 self-start">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-40 self-end">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-40 self-center">3</div>
+			<div class="bg-indigo-500 text-white p-5 self-stretch">4</div>
+		</div>
+	</body>
+</html>

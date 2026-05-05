@@ -1,0 +1,12 @@
+shade-1: #F2F2F2
+shade-2: #D9D9D9
+shade-3: #BFBFBF
+shade-4: #A6A6A6
+shade-5: #8C8C8C
+shade-6: #737373
+shade-7: #595959
+shade-8: #404040
+shade-9: #0D0D0D
+shade-10: #000000
+
+boton-primario: #D83A3A

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../public/estilos.css" />
+		<title>Flexbox</title>
+	</head>
+	<body>
+		<h2 class="m-5 mt-10 font-bold text-3xl">Display</h2>
+		<p class="m-5">.flex</p>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5">
+			<div class="bg-indigo-500 text-white p-5">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 4</div>
+		</div>
+
+		<p class="m-5">.inline-flex</p>
+		<div class="inline-flex gap-5 bg-slate-200 mx-5 p-5">
+			<div class="bg-indigo-500 text-white p-5">Caja 1</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 2</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 3</div>
+			<div class="bg-indigo-500 text-white p-5">Caja 4</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Grow, Shrink, Flex</h2>
+		<p class="m-5">Grow</p>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5">
+			<div class="bg-indigo-500 text-white p-5 grow-0">.grow-0</div>
+			<div class="bg-indigo-500 text-white p-5 grow">.grow</div>
+			<div class="bg-indigo-500 text-white p-5 grow">.grow</div>
+		</div>
+
+		<p class="m-5">Shrink</p>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5">
+			<div class="bg-indigo-500 text-white p-5 w-80 shrink-0">.shrink-0</div>
+			<div class="bg-indigo-500 text-white p-5 w-80 shrink">.shrink</div>
+			<div class="bg-indigo-500 text-white p-5 w-80 shrink">.shrink</div>
+		</div>
+
+		<p class="m-5">Flex None y Flex Initial</p>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5">
+			<div class="bg-indigo-500 text-white p-5 w-80 flex-none">.flex-none</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">.flex-initial</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Wrap</h2>
+
+		<p class="m-5">.flex-wrap</p>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5 flex-wrap">
+			<div class="bg-indigo-500 text-white p-5 w-80">1. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">2. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">4. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">5. Lorem ipsum dolor sit.</div>
+		</div>
+
+		<p class="m-5">.flex-wrap-reverse</p>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5 flex-wrap-reverse">
+			<div class="bg-indigo-500 text-white p-5 w-80">1. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">2. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">4. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">5. Lorem ipsum dolor sit.</div>
+		</div>
+
+		<p class="m-5">.flex-nowrap</p>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5 flex-nowrap">
+			<div class="bg-indigo-500 text-white p-5 w-80">1. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">2. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">4. Lorem ipsum dolor sit.</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">5. Lorem ipsum dolor sit.</div>
+		</div>
+
+		<h2 class="m-5 mt-10 font-bold text-3xl">Order</h2>
+		<div class="flex gap-5 bg-slate-200 m-5 p-5">
+			<div class="bg-indigo-500 text-white p-5 w-80 order-last">1</div>
+			<div class="bg-indigo-500 text-white p-5 w-80 order-4">2</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">3</div>
+			<div class="bg-indigo-500 text-white p-5 w-80">4</div>
+			<div class="bg-indigo-500 text-white p-5 w-80 order-first">5</div>
+		</div>
+	</body>
+</html>

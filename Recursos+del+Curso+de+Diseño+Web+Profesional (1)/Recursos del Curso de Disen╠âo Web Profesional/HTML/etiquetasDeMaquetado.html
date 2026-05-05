@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etiquetas de maquetado</title>
+	</head>
+	<body>
+		<!-- EJEMPLO SIN SEMANTICA -->
+		<div class="header">
+			<div class="nav">
+				<a href="#">Menú 1</a>
+				<a href="#">Menú 2</a>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="articulo">
+				<h3 class="titulo">Este es el titulo de mi post</h3>
+				<p class="fecha">07 de Septiembre de 1995</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quae.</p>
+				<img src="imagenes/paisaje1.jpg" alt="" />
+			</div>
+		</div>
+
+		<div class="sidebar">
+			<p>Texto del sidebar</p>
+		</div>
+
+		<div class="footer">
+			<p>Texto del footer</p>
+		</div>
+
+		<!-- Elementos semanticos:
+		- section - Define una seccion en un documento que puede contener un grupo de contenido 
+		- article - Define el contenido de un sitio, por ejemplo un articulo
+		- header - Define cual sera el encabezado de un sitio (navegación, logo, enlaces, etc)
+		- main - Define la sección principal de un sitio. 
+		- aside - Nos permite definir un area con contenido independiente al principal, como el sidebar
+		- footer - Define cual sera el pie de página de un sitio.
+		- figcaption - Representa la leyenda o pie de imagen.
+		- figure - Representa el contenido dentro de la etiqueta <figcaption>.
+		- mark - Define texto que debería ser resltado por el navegador web.
+		- nav - Define un conjunto de enlaces de navegación.
+		- summary - Define el encabezado para le etiqueta <details>.
+		- details - Define los detalles adicionales de la etiqueta <summary>.
+		- time - Representa un tiempo en formato de computadora.
+		- code - Define código
+		- kbd - Representa teclas a presionar.
+	 -->
+
+		<!-- EJEMPLO CON SEMANTICA -->
+		<header class="header">
+			<nav class="nav">
+				<a href="#">Menú 1</a>
+				<a href="#">Menú 2</a>
+			</nav>
+		</header>
+
+		<main class="main">
+			<article class="articulo">
+				<h1 class="titulo">Este es el titulo de mi post</h1>
+				<time datetime="1995-09-07" class="fecha">07 de Septiembre de 1995</time>
+				<p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing elit.</mark> Doloremque, quae.</p>
+				<figure>
+					<figcaption>
+						<img src="imagenes/paisaje1.jpg" alt="" />
+						Montaña Nevada
+					</figcaption>
+				</figure>
+			</article>
+
+			<section>
+				<h4>Información Adicional</h4>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</section>
+		</main>
+
+		<aside class="sidebar">
+			<p>Texto del sidebar</p>
+		</aside>
+
+		<footer class="footer">
+			<p>Texto del footer</p>
+		</footer>
+	</body>
+</html>

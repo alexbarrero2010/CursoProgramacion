@@ -1,0 +1,69 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Gabarito', sans-serif;
+}
+
+.grid {
+	min-height: 80vh;
+	margin: 60px;
+	& > * {
+		background: #111111;
+		color: #fff;
+		padding: 20px;
+		border-radius: 10px;
+	}
+}
+
+/* Primera forma */
+/* .grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: minmax(150px, auto) 1fr auto;
+
+	.header {
+		grid-column: 1/-1;
+	}
+
+	.main {
+		grid-column: 1 / span 2;
+	}
+
+	.footer {
+		grid-column: 1/-1;
+	}
+} */
+
+/* Segunda forma */
+.grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: minmax(150px, auto) 1fr auto;
+	grid-template-areas:
+		'header header header'
+		'main main aside'
+		'footer footer footer';
+
+	.header {
+		grid-area: header;
+	}
+
+	.main {
+		grid-area: main;
+	}
+
+	.aside {
+		grid-area: aside;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+}

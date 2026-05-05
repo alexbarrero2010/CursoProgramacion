@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+	--body-background: #0d1321;
+	--title-background: #3e5c76;
+	--card-background: #1d2d44;
+	--text-color: #f2f2f2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background: var(--body-background);
+	color: var(--text-color);
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 500px;
+	margin: 40px auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	align-items: center;
+}
+
+.login {
+	background: var(--card-background);
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 5px;
+}
+
+.login h3 {
+	padding: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+
+.login input {
+	padding: 15px;
+	background: none;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: var(--text-color);
+	font-size: 18px;
+	border-radius: 2px;
+}
+
+.login input:focus {
+	outline: 2px solid var(--title-background);
+}
+
+.login button {
+	background: var(--title-background);
+	color: #fff;
+	padding: 15px 20px;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.login button:focus {
+	outline: 2px solid var(--body-background);
+}
+
+.lista {
+	background: var(--card-background);
+	margin-bottom: 40px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.lista h3 {
+	background: var(--title-background);
+	padding: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+
+.lista li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+}
+
+.lista .nombre {
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.lista .telefono {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.lista .icono {
+	height: 16px;
+	width: 16px;
+}
+
+.lista li:last-child {
+	border-bottom: 0px;
+}
+
+.btnCerrarSesion {
+	background: var(--title-background);
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.btnCerrarSesion:focus {
+	outline: 2px solid var(--body-background);
+}
